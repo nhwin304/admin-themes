@@ -1,39 +1,41 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "nhwin304/admin-themes",
+    "description": "This is my package admin-themes",
     "keywords": [
-        ":vendor_name",
-        "laravel",
-        ":package_slug"
+        "filament",
+        "filament-plugin",
+        "laravel-filament",
+        "laravel"
+        "admin-themes"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/nhwin304/admin-themes",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/nhwin304/admin-themes/issues",
+        "source": "https://github.com/nhwin304/admin-themes"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Huy Thắng",
+            "email": "nhthang304@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1",
-        "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
-        "spatie/laravel-package-tools": "^1.15.0"
+        "php": "^8.3",
+        "laravel/framework": "^11.0|^12.0",
+        "filament/filament": "^4.0",
+        "spatie/laravel-package-tools": "^1.92"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
+        "laravel/pint": "^1.14",
         "nunomaduro/collision": "^7.9",
         "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^8.0",
-        "pestphp/pest": "^2.1",
+        "pestphp/pest": "^4.0",
         "pestphp/pest-plugin-arch": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
+        "phpstan/phpstan": "^2.1",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
@@ -41,13 +43,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Nhwin304\\AdminThemes\\": "src/",
+            "Nhwin304\\AdminThemes\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Nhwin304\\AdminThemes\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +69,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Nhwin304\\AdminThemes\\AdminThemesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "AdminThemes": "Nhwin304\\AdminThemes\\Facades\\AdminThemes"
             }
         }
     },

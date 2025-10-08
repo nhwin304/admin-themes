@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Nhwin304\AdminThemes;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class AdminThemesPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'admin-themes';
     }
 
     public function register(Panel $panel): void
