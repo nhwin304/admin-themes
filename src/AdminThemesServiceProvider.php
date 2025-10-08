@@ -10,11 +10,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use Nhwin304\AdminThemes\Commands\AdminThemesCommand;
+use Nhwin304\AdminThemes\Testing\TestsAdminThemes;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Nhwin304\AdminThemes\Commands\AdminThemesCommand;
-use Nhwin304\AdminThemes\Testing\TestsAdminThemes;
 
 class AdminThemesServiceProvider extends PackageServiceProvider
 {
